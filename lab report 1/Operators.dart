@@ -1,0 +1,13 @@
+void main() {
+  int a = 10, b = 3;
+  print("Addition: ${a + b}");
+  print("Subtraction: ${a - b}");
+  print("Multiplication: ${a * b}");
+  print("Division: ${a / b}");
+  print("Modulus: ${a % b}");
+
+  print(a > b);
+  print(a == b);
+
+  print((a > b) && (b < 5));
+}
