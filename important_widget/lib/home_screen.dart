@@ -9,10 +9,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  bool isConnected = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.green),
+      body: Column(
+        children: [
+          Switch(
+            value: isConnected,
+            onChanged: (value) {
+              setState(() {
+                isConnected = value;
+              });
+            
+            },
+           )
+        ],
+      ),
     );
   }
 }
