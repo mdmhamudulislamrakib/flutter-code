@@ -94,9 +94,9 @@ class _HomeState extends State<Home> {
           children: [
             ItemCategory(title: 'Beauty', image: 'beauty.png', color: Colors.pinkAccent),
               ItemCategory(title: 'Baby', image: 'baby.png', color: Colors.pinkAccent),
-             // ItemCategory(title: 'Electronics', image: 'electronics.png', color: Colors.indigo),
-             // ItemCategory(title: 'Kitchen', image: 'kitchen.png', color: Colors.pink),
-             // ItemCategory(title: 'Medical', image: 'medical.png', color: Colors.teal),
+              ItemCategory(title: 'Electronics', image: 'electronics.png', color: Colors.indigo),
+              ItemCategory(title: 'Kitchen', image: 'kitchen.png', color: Colors.teal),
+              ItemCategory(title: 'Medical', image: 'medical.png', color: Colors.teal),
 
           ],
         ),
