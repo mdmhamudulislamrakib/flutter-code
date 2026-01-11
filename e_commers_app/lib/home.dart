@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:e_commers_app/widgets/item_banner.dart';
+import 'package:e_commers_app/widgets/item_product.dart';
 import 'package:e_commers_app/widgets/item_category.dart';
 
 class Home extends StatefulWidget {
@@ -91,16 +92,66 @@ class _HomeState extends State<Home> {
         height: 100,
         child: ListView(
           scrollDirection: Axis.horizontal,
+          padding: EdgeInsets.all(5),
           children: [
-            ItemCategory(title: 'Beauty', image: 'beauty.png', color: Colors.pinkAccent),
+              ItemCategory(title: 'Beauty', image: 'beauty.png', color: Colors.pinkAccent),
               ItemCategory(title: 'Baby', image: 'baby.png', color: Colors.pinkAccent),
               ItemCategory(title: 'Electronics', image: 'electronics.png', color: Colors.indigo),
               ItemCategory(title: 'Kitchen', image: 'kitchen.png', color: Colors.teal),
               ItemCategory(title: 'Medical', image: 'medical.png', color: Colors.teal),
-
           ],
         ),
+      ),
+      //product...............
+      
+      ListTile(
+        title: Text('Products'),
+        trailing: Text('SHOW ALL', style: TextStyle(color: Colors.indigo),),
+      ),
+      GridView.count(
+        crossAxisCount: 2,
+        shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
+        children: [
+          ItemProduct(
+          title:'Professional DSLR for photography & videography', 
+          image: 'product1.jpg', 
+          price: '50,000'
+          ),
+
+          ItemProduct(
+          title:'Professional Head phone for better sound quality', 
+          image: 'product2.jpg', 
+          price: '30,000'
+          ),
+
+          ItemProduct(
+          title:'baby beg for baby of age 0-3 years', 
+          image: 'product3.png', 
+          price: '60,000'
+          ),
+
+          ItemProduct(
+          title:',edical item for personal protection', 
+          image: 'product4.png', 
+          price: '10,000'
+          ),
+
+          ItemProduct(
+          title:'fan for home and office use', 
+          image: 'product5.png', 
+          price: '20,000'
+          ),
+
+          ItemProduct(
+          title:'Ac for summer season', 
+          image: 'product6.png', 
+          price: '300,000'
+          )
+
+        ]
       )
+
        ],
       ),
     );

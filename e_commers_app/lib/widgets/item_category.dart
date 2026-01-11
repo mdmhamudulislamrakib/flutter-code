@@ -7,19 +7,22 @@ class ItemCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-              spacing:1,
-              children: [
-                Container(
-                  padding: EdgeInsets.all(1),
-                  decoration:BoxDecoration(
-                    color: color,
-                    shape: BoxShape.circle
-                  ),
-                  child: Image.asset('assets/icons/$image', height: 50,width: 60,)
-                  ),
-                Text(title, style:TextStyle(fontWeight: FontWeight.w300),),
-              ],
-            );
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal:17),
+      child: Column(
+                spacing:3,
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(1),
+                    decoration:BoxDecoration(
+                      color: color,
+                      shape: BoxShape.circle
+                    ),
+                    child: Image.asset('assets/icons/$image', height: 50,width: 60,)
+                    ),
+                  Text(title, style:TextStyle(fontWeight: FontWeight.w300),),
+                ],
+              ),
+    );
   }
 }
