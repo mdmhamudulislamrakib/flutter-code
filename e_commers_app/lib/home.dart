@@ -43,7 +43,9 @@ class _HomeState extends State<Home> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Search',
+                hintStyle: TextStyle(fontWeight: FontWeight.w300),
                 prefixIcon: Icon(CupertinoIcons.search),
+                prefixIconColor: Colors.grey,
                 suffixIcon: Icon(Icons.filter_list),
                 contentPadding: EdgeInsets.all(15),
                 border: InputBorder.none,
@@ -110,6 +112,9 @@ class _HomeState extends State<Home> {
       ),
       GridView.count(
         crossAxisCount: 2,
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         children: [
@@ -147,7 +152,33 @@ class _HomeState extends State<Home> {
           title:'Ac for summer season', 
           image: 'product6.png', 
           price: '300,000'
-          )
+          ),
+
+          ItemProduct(
+          title:'medicle equepment for hospital', 
+          image: 'product7.jpg', 
+          price: '1200,000'
+          ),
+
+
+                    ItemProduct(
+          title:'Professional DSLR for photography & videography', 
+          image: 'product1.jpg', 
+          price: '50,000'
+          ),
+
+          ItemProduct(
+          title:'Professional Head phone for better sound quality', 
+          image: 'product2.jpg', 
+          price: '30,000'
+          ),
+
+          ItemProduct(
+          title:'baby beg for baby of age 0-3 years', 
+          image: 'product3.png', 
+          price: '60,000'
+          ),
+
 
         ]
       )
