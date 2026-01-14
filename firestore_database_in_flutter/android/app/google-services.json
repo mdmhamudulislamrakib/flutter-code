@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "118289563946",
+    "project_id": "fire-intro-24408",
+    "storage_bucket": "fire-intro-24408.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118289563946:android:9d9b7c1d2950f89ce45e53",
+        "android_client_info": {
+          "package_name": "com.example.firestore_database_in_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI6fobX71nfAL8hSqXjBxTEY_HN2YKlm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
